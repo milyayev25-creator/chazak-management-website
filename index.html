@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Frank+Ruhl+Libre:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -164,12 +164,10 @@
         <div class="photo"><img src="img/yosef.jpg" alt="Yosef Ilyayev" loading="lazy" width="800" height="800"></div>
         <div class="person-body">
           <h3>Yosef Ilyayev</h3>
-          <p class="role">Manager</p>
+          <p class="role">Director of Strategic Operations</p>
           <div class="bio">
-            <p>Yosef Ilyayev serves as a Manager of Chazak Management, leading the company’s business operations, strategic execution, and development activities.</p>
-            <p>His responsibilities include overseeing project management initiatives, coordinating with architects and contractors, negotiating commercial agreements, evaluating project costs, and managing relationships with key business partners.</p>
-            <p>With a hands-on approach to management, Yosef focuses on operational efficiency, financial discipline, and ensuring that each project advances in accordance with its established objectives.</p>
-            <p>As Manager, he plays a central role in translating the company’s strategic vision into practical business and development outcomes.</p>
+            <p>Yosef Ilyayev leads the strategic planning, negotiations, and commercial coordination of Chazak Management’s projects. He oversees contractor and vendor sourcing, evaluates proposals and contracts, negotiates pricing, and advises on key project decisions.</p>
+            <p>Working closely with architects, contractors, and project stakeholders, Yosef focuses on securing favorable terms, optimizing costs, and ensuring each project is strategically positioned for successful execution.</p>
           </div>
           <button class="bio-toggle" aria-expanded="false">Read bio</button>
         </div>
@@ -178,12 +176,10 @@
         <div class="photo"><img src="img/menashe.jpg" alt="Menashe Ilyayev" loading="lazy" width="800" height="800"></div>
         <div class="person-body">
           <h3>Menashe Ilyayev</h3>
-          <p class="role">Manager</p>
+          <p class="role">Director of Field Operations</p>
           <div class="bio">
-            <p>Menashe Ilyayev serves as a Manager of Chazak Management, focusing on operational coordination, project execution, and the management of day-to-day business activities.</p>
-            <p>His role includes coordinating project participants, supporting contractor and vendor relationships, monitoring project schedules, and ensuring that operational priorities remain aligned with company objectives.</p>
-            <p>Working closely with executive leadership, Menashe helps maintain organized processes, clear communication, and consistent project oversight.</p>
-            <p>As Manager, he supports Chazak Management’s commitment to reliability, accountability, and effective execution.</p>
+            <p>Menashe Ilyayev directs the on-site execution and daily field operations of Chazak Management’s projects. He oversees contractors, subcontractors, and specialized trades, ensuring construction activities are carried out according to approved plans, specifications, and project expectations.</p>
+            <p>From coordinating wall layouts and HVAC installations to monitoring workmanship, schedules, and contractor performance, Menashe ensures that projects progress efficiently and that work is completed properly and to the required standards.</p>
           </div>
           <button class="bio-toggle" aria-expanded="false">Read bio</button>
         </div>
@@ -200,15 +196,27 @@
       <p class="sub">At Chazak Management, every project represents an opportunity to bring together strategic planning, responsible management, and purposeful execution.</p>
     </div>
   </div>
-  <figure class="feature">
-    <img src="img/griffin-heights.jpg" alt="Griffin Heights Medical Center, Dania Beach, Florida, at dusk" loading="lazy" width="1448" height="1086">
+  <figure class="feature ba">
     <figcaption class="feature-cap">
       <p class="soon">Coming Soon</p>
       <h3>Griffin Heights Medical Center</h3>
       <p class="loc">Dania Beach, Florida</p>
     </figcaption>
+    <div class="ba-stage" style="--pos:50%">
+      <img class="ba-after" src="img/griffin-after.jpg" alt="After: rendering of the proposed Griffin Heights Medical Center at dusk, with lit storefronts for medical tenants" loading="lazy" width="1448" height="965">
+      <div class="ba-before">
+        <img src="img/griffin-before.jpg?v=2" alt="Before: the existing single-story building on the site today" loading="lazy" width="1448" height="965">
+      </div>
+      <span class="ba-tag ba-tag-before">Before<em>Existing Site</em></span>
+      <span class="ba-tag ba-tag-after">After<em>Coming Soon</em></span>
+      <div class="ba-handle" role="slider" tabindex="0" aria-label="Drag to compare the existing site with the proposed development" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% existing site">
+        <span class="ba-knob" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+    </div>
+    <p class="ba-note"><span class="ba-hint">Drag to compare</span><span class="ba-disc">Rendering for illustrative purposes only. Final design subject to change.</span></p>
   </figure>
   <div class="wrap narrow project-text">
+    <p class="ba-lede">From an aging single-story building to a modern, multi-specialty medical destination.</p>
     <p class="ptype">Commercial Medical Property Renovation &amp; Development</p>
     <p>Griffin Heights Medical Center represents a commercial medical property redevelopment initiative focused on modernizing existing space to support healthcare-related operations.</p>
     <p>The project’s planning scope includes architectural coordination, structural and engineering evaluation, construction budgeting, contractor selection, and commercial renovation planning.</p>
@@ -313,6 +321,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>
