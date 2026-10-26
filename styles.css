@@ -119,7 +119,7 @@ section{padding:110px 0}
 
 /* leadership */
 .leadership{background:var(--cream)}
-.team{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
 .person{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
 .photo{aspect-ratio:1/1;overflow:hidden;background:var(--navy)}
 .photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
