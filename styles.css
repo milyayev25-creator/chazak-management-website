@@ -350,3 +350,8 @@ html,body{overflow-x:hidden}
 .prog-dots button[aria-selected="true"]{background:#c9a96e;transform:scale(1.25)}
 .prog-hint{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a94a3;margin-top:10px}
 @media (max-width:640px){.prog-btn{width:36px;height:36px;font-size:24px;line-height:32px}}
+
+/* show whole photos, no cropping */
+.prog-track{align-items:center;background:#0b2340}
+.prog-slide{aspect-ratio:auto;height:auto;background:transparent}
+.prog-slide img{width:100%;height:auto;object-fit:contain}
