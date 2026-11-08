@@ -66,3 +66,13 @@ var CONTACT_EMAIL = "info@chazakmanagement.com"; // PLACEHOLDER — replace with
   });
   var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
 })();
+
+(function(){var c=document.querySelector('.prog-car');if(!c)return;var t=c.querySelector('.prog-track'),s=t.querySelectorAll('.prog-slide'),d=document.querySelector('.prog-dots');
+s.forEach(function(_,i){var b=document.createElement('button');b.setAttribute('aria-label','Photo '+(i+1));b.onclick=function(){go(i)};d.appendChild(b)});
+function cur(){return Math.round(t.scrollLeft/t.clientWidth)}
+function go(i){i=(i+s.length)%s.length;t.scrollTo({left:i*t.clientWidth,behavior:'smooth'})}
+function upd(){var i=cur();d.querySelectorAll('button').forEach(function(b,j){b.setAttribute('aria-selected',j===i)})}
+c.querySelector('.prev').onclick=function(){go(cur()-1)};c.querySelector('.next').onclick=function(){go(cur()+1)};
+t.addEventListener('scroll',function(){clearTimeout(t._u);t._u=setTimeout(upd,60)});
+t.addEventListener('click',function(e){var r=t.getBoundingClientRect();go(cur()+((e.clientX-r.left)>r.width/2?1:-1))});
+upd()})();
