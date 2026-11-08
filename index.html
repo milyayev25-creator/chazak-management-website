@@ -15,8 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Frank+Ruhl+Libre:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
-<style>.prog-track{align-items:center}.prog-slide{aspect-ratio:auto!important;height:auto!important;background:transparent!important}.prog-slide img{width:100%!important;height:auto!important;object-fit:contain!important}.prog-btn{top:auto!important;bottom:-58px!important;transform:none!important;background:#fff!important;border:1px solid #d5dbe3!important}.prog-btn.prev{left:calc(50% - 110px)!important}.prog-btn.next{right:calc(50% - 110px)!important}.prog-dots{margin-top:26px!important}</style>
+<link rel="stylesheet" href="styles.css?v=7">
+<style>.prog-track{align-items:flex-start!important;background:transparent!important;transition:height .35s ease}.prog-slide{aspect-ratio:auto!important;height:auto!important;background:transparent!important}.prog-slide img{width:100%!important;height:auto!important;object-fit:contain!important;border-radius:14px}.prog-btn{display:none!important}.prog-dots{margin-top:16px!important}</style>
+<script>window.addEventListener("load",function(){var t=document.querySelector(".prog-track");if(!t)return;var s=t.querySelectorAll(".prog-slide");function fit(){var i=Math.round(t.scrollLeft/t.clientWidth);if(s[i])t.style.height=s[i].offsetHeight+"px"}t.addEventListener("scroll",function(){clearTimeout(t._f);t._f=setTimeout(fit,80)});window.addEventListener("resize",fit);s.forEach(function(x){var im=x.querySelector("img");if(im&&!im.complete)im.addEventListener("load",fit)});fit()})</script>
 </head>
 <body>
 
@@ -358,6 +359,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=6"></script>
+<script src="main.js?v=7"></script>
 </body>
 </html>
