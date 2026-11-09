@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="styles.css?v=7">
 <style>.prog-track{align-items:flex-start!important;background:transparent!important;transition:height .35s ease}.prog-slide{aspect-ratio:auto!important;height:auto!important;background:transparent!important}.prog-slide img{width:100%!important;height:auto!important;object-fit:contain!important;border-radius:14px}.prog-btn{display:none!important}.prog-dots{margin-top:16px!important}</style>
 <script>window.addEventListener("load",function(){var t=document.querySelector(".prog-track");if(!t)return;var s=t.querySelectorAll(".prog-slide");function fit(){var i=Math.round(t.scrollLeft/t.clientWidth);if(s[i])t.style.height=s[i].offsetHeight+"px"}t.addEventListener("scroll",function(){clearTimeout(t._f);t._f=setTimeout(fit,80)});window.addEventListener("resize",fit);s.forEach(function(x){var im=x.querySelector("img");if(im&&!im.complete)im.addEventListener("load",fit)});fit()})</script>
+<style>.cc-phone{display:flex;align-items:center;gap:8px;margin-top:10px;font-weight:500}.cc-phone a{color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e}</style>
 </head>
 <body>
 
@@ -320,6 +321,7 @@
         <p class="cc-name">Chazak Management</p>
         <p class="cc-loc"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> South Florida</p>
         <p class="cc-lines">Construction Management | Development | Owner’s Representation</p>
+        <p class="cc-phone"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> <span>Yosef Ilyayev</span> &nbsp;<a href="tel:+12299398074">(229) 939-8074</a></p>
       </div>
     </div>
     <form class="form" id="contact-form" novalidate>
